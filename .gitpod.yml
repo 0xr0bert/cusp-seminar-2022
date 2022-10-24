@@ -1,2 +1,7 @@
+
 image:
   file: .gitpod.dockerfile
+
+vscode:
+  extensions:
+    - James-Yu.latex-workshop
