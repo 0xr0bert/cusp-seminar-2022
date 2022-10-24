@@ -6,6 +6,7 @@ FROM docker.io/library/ubuntu:22.04
 # - sudo, while not required, is recommended to be installed, since the
 #   workspace user (`gitpod`) is non-root and won't be able to install
 #   and use `sudo` to install any other tools in a live workspace.
+ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -yq \
     git \
     git-lfs \
