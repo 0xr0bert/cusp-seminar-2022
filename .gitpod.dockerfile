@@ -1,4 +1,4 @@
-FROM docker.io/pandoc/latex:2.19-ubuntu
+FROM docker.io/library/ubuntu:22.04
 
 # Install:
 # - git (and git-lfs), for git operations (to e.g. push your work).
@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -yq \
     git \
     git-lfs \
     sudo \
+    texlive-full \
     && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/*
 
 # Create the gitpod user. UID must be 33333.
