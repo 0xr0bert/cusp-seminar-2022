@@ -5,3 +5,4 @@ image:
 vscode:
   extensions:
     - James-Yu.latex-workshop
+    - valentjn.vscode-ltex
